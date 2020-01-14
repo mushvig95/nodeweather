@@ -12,7 +12,7 @@ weather.addEventListener('submit', (e)=> {
     .then(data=>
         {console.log(data)
         text.textContent = !data.error ?
-            `lat is ${data.latitude} and long in ${data.longitude} and location is ${data.location}`
+            `latitude is ${data.latitude} and longitude is ${data.longitude} and location is ${data.location}`
         : data.error}
     )
 })
