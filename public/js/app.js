@@ -7,7 +7,7 @@ weather.addEventListener('submit', (e)=> {
     text.textContent='Loading ...'
     const search = document.querySelector('input').value;
 
-    fetch(`http://localhost:3000/weather?address=${search}`)
+    fetch(`/weather?address=${search}`)
     .then(res => res.json())
     .then(data=>
         {console.log(data)
